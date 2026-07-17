@@ -7,11 +7,12 @@
     <meta name="description" content="Atendimento psicológico ético e humanizado para crianças, adolescentes, adultos e famílias. Avaliação neuropsicológica, terapia individual e terapia de casal. Presencial em Saquarema (RJ), online e domiciliar.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+<base target="_blank">
 </head>
 <body>
     <!-- Navbar -->
@@ -80,7 +81,6 @@
             </div>
             <div class="hero-image">
                 <div class="hero-img-wrapper">
-                    <!-- SUBSTITUIR: usar foto real da clínica ou da equipe quando disponível -->
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=700&fit=crop" alt="Profissional de psicologia em consultório">
                     <div class="hero-img-badge">
                         <i class="fas fa-lock"></i>
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <!-- Quando procurar (situações de vida, sem apelo sensacionalista) -->
+    <!-- Quando procurar -->
     <section class="pain-section" id="quando-procurar">
         <div class="container">
             <div class="section-header center">
@@ -247,7 +247,6 @@
                 <button class="filter-btn" data-filter="atendimento">Atendimento</button>
                 <button class="filter-btn" data-filter="infantil">Infantil</button>
             </div>
-            <!-- SUBSTITUIR: trocar as imagens de exemplo por fotos reais da clínica -->
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="recepcao">
                     <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=400&h=500&fit=crop" alt="Recepção da clínica">
@@ -327,7 +326,6 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <!-- SUBSTITUIR: usar foto real da clínica ou da equipe quando disponível -->
                     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=600&fit=crop" alt="Interior da clínica Catojo">
                     <div class="about-experience">
                         <span class="exp-number">100%</span>
@@ -375,7 +373,6 @@
                             <small>Públicos Atendidos</small>
                         </div>
                     </div>
-                    <!-- ATENÇÃO: SUBSTITUIR "CRP 05/00000" pelo número real do CRP da responsável técnica antes de publicar (obrigatório pelo Código de Ética Profissional do Psicólogo) -->
                     <p class="about-crp">Responsável técnica: Psicóloga Lorena Gomes Barcelos Catojo | CRP 05/00000</p>
                 </div>
             </div>
@@ -418,7 +415,7 @@
         </div>
     </section>
 
-    <!-- Abordagem (substitui depoimentos, vedados pelo Código de Ética) -->
+    <!-- Abordagem -->
     <section class="approach-section" id="abordagem">
         <div class="container">
             <div class="section-header center">
@@ -538,11 +535,14 @@
                                 <a href="mailto:clinicacatojo@gmail.com">clinicacatojo@gmail.com</a>
                             </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-item contact-address">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <span>Clínica</span>
-                                <p>Rua Professor Francisco Fonseca, 86, Sala 8<br>Saquarema, RJ | CEP 28994-795</p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Professor+Francisco+Fonseca%2C+86%2C+Sala+8%2C+Saquarema%2C+RJ" target="_blank" rel="noopener" class="address-link">
+                                    Rua Professor Francisco Fonseca, 86, Sala 8<br>Saquarema, RJ | CEP 28994-795
+                                    <span class="address-map-hint"><i class="fas fa-location-arrow"></i> Ver no Google Maps</span>
+                                </a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -552,6 +552,22 @@
                                 <a href="https://instagram.com/clinicacatojo" target="_blank" rel="noopener">@clinicacatojo</a>
                             </div>
                         </div>
+                    </div>
+                    <!-- Google Maps Embed -->
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5574963568683!2d-42.47063322380709!3d-22.892799237373044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x976755f8713ccd%3A0x2125435818d2e07!2sR.%20Prof.%20Francisco%20Fonseca%2C%2086%20-%20Sl%208%20-%20Bacax%C3%A1%2C%20Saquarema%20-%20RJ%2C%2028990-000!5e0!3m2!1sen!2sbr!4v1784290970296!5m2!1sen!2sbr" 
+                            width="100%" 
+                            height="220" 
+                            style="border:0; border-radius: 16px; display: block;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            title="Catojo Clínica - Rua Prof. Francisco Fonseca, 86, Sala 8, Bacaxá, Saquarema - RJ">
+                        </iframe>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Professor+Francisco+Fonseca%2C+86%2C+Sala+8%2C+Saquarema%2C+RJ" target="_blank" rel="noopener" class="map-link-btn">
+                            <i class="fas fa-location-arrow"></i> Abrir no Google Maps
+                        </a>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
@@ -664,13 +680,12 @@
                     <ul>
                         <li><a href="https://wa.me/5521977203468" target="_blank" rel="noopener">(21) 97720-3468</a></li>
                         <li><a href="mailto:clinicacatojo@gmail.com">clinicacatojo@gmail.com</a></li>
-                        <li>Rua Professor Francisco Fonseca, 86, Sala 8, Saquarema, RJ</li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Professor+Francisco+Fonseca%2C+86%2C+Sala+8%2C+Saquarema%2C+RJ" target="_blank" rel="noopener">Rua Professor Francisco Fonseca, 86, Sala 8, Saquarema, RJ, CEP 28994-795</a></li>
                         <li><a href="https://instagram.com/clinicacatojo" target="_blank" rel="noopener">@clinicacatojo</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-legal">
-                <!-- ATENÇÃO: SUBSTITUIR "CRP 05/00000" e "CRPJ 05/00000" pelos registros reais antes de publicar. A identificação do CRP é obrigatória (Art. 20 do Código de Ética) e a da pessoa jurídica também (Resolução CFP nº 03/2007). -->
                 <p>Catojo Clínica de Neurodesenvolvimento | CNPJ 65.013.789/0001-60 | CRPJ 05/00000</p>
                 <p>Responsável técnica: Psicóloga Lorena Gomes Barcelos Catojo | CRP 05/00000</p>
                 <p>Site de caráter informativo, em conformidade com o Código de Ética Profissional do Psicólogo e com as orientações do Conselho Federal de Psicologia. O conteúdo desta página não substitui atendimento psicológico.</p>

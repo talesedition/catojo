@@ -282,4 +282,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', updateActiveNav);
 
+    // === GOOGLE MAPS LAZY LOAD ===
+    const mapIframe = document.querySelector('.contact-map iframe');
+    if (mapIframe) {
+        const mapObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const src = mapIframe.getAttribute('src');
+                    if (src && src.includes('about:blank')) {
+                        // If placeholder, load real map
+                        mapIframe.setAttribute('src', mapIframe.dataset.src || src);
+                    }
+                    mapObserver.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '100px' });
+
+        mapObserver.observe(mapIframe);
+    }
+
 });
