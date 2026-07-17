@@ -1,6 +1,6 @@
 /* ============================================
    CATOJO CLÍNICA DE NEURODESENVOLVIMENTO - STYLE.CSS
-   Identidade Visual: Verde #2c685b + Creme #f1efe8 + Laranja #d85a30
+   Identidade Visual: Verde #085041 + Creme #f1efe8 + Laranja #d85a30
    Fonte: Playfair Display (títulos) + Montserrat (corpo)
    ============================================ */
 
@@ -13,9 +13,9 @@
 
 :root {
     /* Paleta da Identidade Visual Catojo */
-    --color-primary: #2c685b;
-    --color-primary-light: #3d8a7a;
-    --color-primary-dark: #1e4a40;
+    --color-primary: #085041;
+    --color-primary-light: #0a7a63;
+    --color-primary-dark: #05382d;
     --color-accent: #d85a30;
     --color-accent-light: #e87a52;
     --color-accent-dark: #b54520;
@@ -46,7 +46,7 @@
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
     --shadow-md: 0 4px 20px rgba(0,0,0,0.06);
     --shadow-lg: 0 8px 40px rgba(0,0,0,0.08);
-    --shadow-accent: 0 4px 20px rgba(44, 104, 91, 0.15);
+    --shadow-accent: 0 4px 20px rgba(8, 80, 65, 0.15);
     --shadow-orange: 0 4px 20px rgba(216, 90, 48, 0.15);
 
     --radius-sm: 8px;
@@ -166,7 +166,7 @@ img {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(44, 104, 91, 0.3);
+    box-shadow: 0 6px 30px rgba(8, 80, 65, 0.3);
     background: var(--color-primary-light);
     border-color: var(--color-primary-light);
 }
@@ -180,7 +180,7 @@ img {
 .btn-outline:hover {
     border-color: var(--color-primary);
     color: var(--color-primary);
-    background: rgba(44, 104, 91, 0.04);
+    background: rgba(8, 80, 65, 0.04);
 }
 
 .btn-block {
@@ -340,7 +340,7 @@ img {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse at 20% 50%, rgba(44, 104, 91, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 50%, rgba(8, 80, 65, 0.06) 0%, transparent 50%),
         radial-gradient(ellipse at 80% 20%, rgba(216, 90, 48, 0.04) 0%, transparent 40%);
     z-index: 0;
 }
@@ -365,8 +365,8 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(44, 104, 91, 0.08);
-    border: 1px solid rgba(44, 104, 91, 0.2);
+    background: rgba(8, 80, 65, 0.08);
+    border: 1px solid rgba(8, 80, 65, 0.2);
     color: var(--color-primary);
     padding: 8px 16px;
     border-radius: 100px;
@@ -537,7 +537,7 @@ img {
 .pain-icon {
     width: 56px;
     height: 56px;
-    background: rgba(44, 104, 91, 0.08);
+    background: rgba(8, 80, 65, 0.08);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
@@ -648,7 +648,7 @@ img {
 .service-icon {
     width: 48px;
     height: 48px;
-    background: rgba(44, 104, 91, 0.08);
+    background: rgba(8, 80, 65, 0.08);
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
@@ -747,7 +747,7 @@ img {
 .modality-icon {
     width: 56px;
     height: 56px;
-    background: rgba(44, 104, 91, 0.08);
+    background: rgba(8, 80, 65, 0.08);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -836,12 +836,8 @@ img {
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;
-    opacity: 0;
-    transition: var(--transition);
-}
-
-.portfolio-item:hover .portfolio-overlay {
     opacity: 1;
+    transition: var(--transition);
 }
 
 .portfolio-item:hover img {
@@ -884,11 +880,13 @@ img {
     justify-content: center;
     cursor: pointer;
     transition: var(--transition);
+    opacity: 0.7;
 }
 
 .portfolio-zoom:hover {
     background: var(--color-primary);
     color: #ffffff;
+    opacity: 1;
 }
 
 .portfolio-cta {
@@ -981,7 +979,7 @@ img {
 .about-feature i {
     width: 36px;
     height: 36px;
-    background: rgba(44, 104, 91, 0.08);
+    background: rgba(8, 80, 65, 0.08);
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
@@ -1056,14 +1054,14 @@ img {
     font-family: var(--font-display);
     font-size: 3.5rem;
     font-weight: 700;
-    color: rgba(44, 104, 91, 0.08);
+    color: rgba(8, 80, 65, 0.08);
     line-height: 1;
 }
 
 .process-icon {
     width: 56px;
     height: 56px;
-    background: rgba(44, 104, 91, 0.08);
+    background: rgba(8, 80, 65, 0.08);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
@@ -1117,7 +1115,7 @@ img {
 .approach-icon {
     width: 56px;
     height: 56px;
-    background: rgba(44, 104, 91, 0.08);
+    background: rgba(8, 80, 65, 0.08);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
@@ -1257,7 +1255,7 @@ img {
 .contact-item > i {
     width: 48px;
     height: 48px;
-    background: rgba(44, 104, 91, 0.08);
+    background: rgba(8, 80, 65, 0.08);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
@@ -1409,7 +1407,7 @@ img {
 .form-group select:focus,
 .form-group textarea:focus {
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(44, 104, 91, 0.08);
+    box-shadow: 0 0 0 3px rgba(8, 80, 65, 0.08);
 }
 
 .form-group input::placeholder,
@@ -1449,7 +1447,7 @@ img {
     padding: 100px 0;
     text-align: center;
     background:
-        radial-gradient(ellipse at center, rgba(44, 104, 91, 0.04) 0%, transparent 70%),
+        radial-gradient(ellipse at center, rgba(8, 80, 65, 0.04) 0%, transparent 70%),
         var(--color-bg);
 }
 
