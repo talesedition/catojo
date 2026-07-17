@@ -199,11 +199,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const isActive = item.classList.contains('active');
 
             // Close all
-            faqItems.forEach(i => i.classList.remove('active'));
+            faqItems.forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
 
             // Open clicked if wasn't active
             if (!isActive) {
                 item.classList.add('active');
+                question.setAttribute('aria-expanded', 'true');
             }
         });
     });
@@ -290,7 +294,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (entry.isIntersecting) {
                     const src = mapIframe.getAttribute('src');
                     if (src && src.includes('about:blank')) {
-                        // If placeholder, load real map
                         mapIframe.setAttribute('src', mapIframe.dataset.src || src);
                     }
                     mapObserver.unobserve(entry.target);

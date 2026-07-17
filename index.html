@@ -12,26 +12,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
-<base target="_blank">
+    <base target="_blank">
 <base target="_blank">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">
+            <a href="#" class="logo" target="_self">
                 <span class="logo-icon"><i class="fas fa-seedling"></i></span>
                 <span class="logo-text">CATOJO<span class="logo-accent">CLÍNICA</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#espaco">Espaço</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#faq">Dúvidas</a></li>
-                <li><a href="#contato" class="nav-cta">Agendar Conversa</a></li>
+                <li><a href="#inicio" target="_self">Início</a></li>
+                <li><a href="#servicos" target="_self">Serviços</a></li>
+                <li><a href="#espaco" target="_self">Espaço</a></li>
+                <li><a href="#sobre" target="_self">Sobre</a></li>
+                <li><a href="#faq" target="_self">Dúvidas</a></li>
+                <li><a href="#contato" class="nav-cta" target="_self">Agendar Conversa</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,6 +43,13 @@
     <section class="hero" id="inicio">
         <div class="hero-overlay"></div>
         <div class="hero-bg"></div>
+        <!-- Decorative waves inside hero only -->
+        <svg class="hero-wave hero-wave-top" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,160 C240,260 480,60 720,160 C960,260 1200,60 1440,160 L1440,0 L0,0 Z" fill="rgba(216, 90, 48, 0.06)"/>
+        </svg>
+        <svg class="hero-wave hero-wave-bottom" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,160 C240,60 480,260 720,160 C960,60 1200,260 1440,160 L1440,320 L0,320 Z" fill="rgba(216, 90, 48, 0.04)"/>
+        </svg>
         <div class="container hero-content">
             <div class="hero-text">
                 <div class="hero-badge">
@@ -58,10 +65,10 @@
                     online para todo o Brasil e atendimento domiciliar.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#contato" class="btn btn-primary">
+                    <a href="#contato" class="btn btn-primary" target="_self">
                         <i class="fas fa-calendar-check"></i> Agendar uma Conversa
                     </a>
-                    <a href="#servicos" class="btn btn-outline">
+                    <a href="#servicos" class="btn btn-outline" target="_self">
                         <i class="fas fa-list"></i> Conhecer os Serviços
                     </a>
                 </div>
@@ -165,7 +172,7 @@
                             <li><i class="fas fa-check"></i> Devolutiva com orientações à família</li>
                             <li><i class="fas fa-check"></i> Documentação conforme as normas do CFP</li>
                         </ul>
-                        <a href="#contato" class="service-link">Quero saber mais <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contato" class="service-link" target="_self">Quero saber mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -185,7 +192,7 @@
                             <li><i class="fas fa-check"></i> Autismo e neurodivergência em adultos</li>
                             <li><i class="fas fa-check"></i> Objetivos construídos em conjunto</li>
                         </ul>
-                        <a href="#contato" class="service-link">Quero saber mais <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contato" class="service-link" target="_self">Quero saber mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -205,7 +212,7 @@
                             <li><i class="fas fa-check"></i> Encontros com objetivos definidos em conjunto</li>
                             <li><i class="fas fa-check"></i> Ambiente seguro e sigiloso</li>
                         </ul>
-                        <a href="#contato" class="service-link">Quero saber mais <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contato" class="service-link" target="_self">Quero saber mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -254,7 +261,7 @@
                     <div class="portfolio-overlay">
                         <span class="portfolio-tag">Recepção</span>
                         <h4>Recepção</h4>
-                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                        <button class="portfolio-zoom" aria-label="Ampliar imagem"><i class="fas fa-expand"></i></button>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="atendimento">
@@ -262,7 +269,7 @@
                     <div class="portfolio-overlay">
                         <span class="portfolio-tag">Atendimento</span>
                         <h4>Sala de Atendimento</h4>
-                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                        <button class="portfolio-zoom" aria-label="Ampliar imagem"><i class="fas fa-expand"></i></button>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="infantil">
@@ -270,7 +277,7 @@
                     <div class="portfolio-overlay">
                         <span class="portfolio-tag">Infantil</span>
                         <h4>Espaço Infantil</h4>
-                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                        <button class="portfolio-zoom" aria-label="Ampliar imagem"><i class="fas fa-expand"></i></button>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="recepcao">
@@ -278,7 +285,7 @@
                     <div class="portfolio-overlay">
                         <span class="portfolio-tag">Recepção</span>
                         <h4>Sala de Espera</h4>
-                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                        <button class="portfolio-zoom" aria-label="Ampliar imagem"><i class="fas fa-expand"></i></button>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="atendimento">
@@ -286,7 +293,7 @@
                     <div class="portfolio-overlay">
                         <span class="portfolio-tag">Atendimento</span>
                         <h4>Consultório</h4>
-                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                        <button class="portfolio-zoom" aria-label="Ampliar imagem"><i class="fas fa-expand"></i></button>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="infantil">
@@ -294,7 +301,7 @@
                     <div class="portfolio-overlay">
                         <span class="portfolio-tag">Infantil</span>
                         <h4>Materiais Lúdicos</h4>
-                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                        <button class="portfolio-zoom" aria-label="Ampliar imagem"><i class="fas fa-expand"></i></button>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="atendimento">
@@ -302,7 +309,7 @@
                     <div class="portfolio-overlay">
                         <span class="portfolio-tag">Atendimento</span>
                         <h4>Consultório II</h4>
-                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                        <button class="portfolio-zoom" aria-label="Ampliar imagem"><i class="fas fa-expand"></i></button>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="infantil">
@@ -310,12 +317,12 @@
                     <div class="portfolio-overlay">
                         <span class="portfolio-tag">Infantil</span>
                         <h4>Atividades</h4>
-                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                        <button class="portfolio-zoom" aria-label="Ampliar imagem"><i class="fas fa-expand"></i></button>
                     </div>
                 </div>
             </div>
             <div class="portfolio-cta">
-                <a href="#contato" class="btn btn-primary">
+                <a href="#contato" class="btn btn-primary" target="_self">
                     <i class="fas fa-calendar-check"></i> Agendar uma conversa
                 </a>
             </div>
@@ -454,7 +461,7 @@
             </div>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>Como funciona a primeira conversa?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -463,7 +470,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>Quais são as modalidades de atendimento?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -472,7 +479,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>O que é a avaliação neuropsicológica?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -481,7 +488,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>O atendimento é sigiloso?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -490,7 +497,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>A clínica atende por convênio?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -499,7 +506,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>Como são definidos os valores das sessões?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -646,34 +653,34 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
+                    <a href="#" class="logo" target="_self">
                         <span class="logo-icon"><i class="fas fa-seedling"></i></span>
                         <span class="logo-text">CATOJO<span class="logo-accent">CLÍNICA</span></span>
                     </a>
                     <p>Clínica de neurodesenvolvimento em Saquarema (RJ). Atendimento psicológico ético e humanizado para crianças, adolescentes, adultos e famílias, nas modalidades presencial, online e domiciliar.</p>
                     <div class="footer-social">
-                        <a href="https://instagram.com/clinicacatojo" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/5521977203468" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-                        <a href="mailto:clinicacatojo@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://instagram.com/clinicacatojo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5521977203468" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:clinicacatojo@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
                     <h4>Navegação</h4>
                     <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#espaco">Espaço</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#faq">Dúvidas</a></li>
+                        <li><a href="#inicio" target="_self">Início</a></li>
+                        <li><a href="#servicos" target="_self">Serviços</a></li>
+                        <li><a href="#espaco" target="_self">Espaço</a></li>
+                        <li><a href="#sobre" target="_self">Sobre</a></li>
+                        <li><a href="#faq" target="_self">Dúvidas</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Serviços</h4>
                     <ul>
-                        <li><a href="#servicos">Avaliação Neuropsicológica</a></li>
-                        <li><a href="#servicos">Terapia Individual</a></li>
-                        <li><a href="#servicos">Terapia de Casal</a></li>
-                        <li><a href="#servicos">Presencial, Online e Domiciliar</a></li>
+                        <li><a href="#servicos" target="_self">Avaliação Neuropsicológica</a></li>
+                        <li><a href="#servicos" target="_self">Terapia Individual</a></li>
+                        <li><a href="#servicos" target="_self">Terapia de Casal</a></li>
+                        <li><a href="#servicos" target="_self">Presencial, Online e Domiciliar</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -693,20 +700,20 @@
                 <p>Em situação de crise ou emergência emocional, ligue 188 (CVV, atendimento 24h) ou procure o pronto atendimento mais próximo.</p>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Catojo Clínica de Neurodesenvolvimento. Todos os direitos reservados.</p>
+                <p>&copy; 2026 Catojo Clínica de Neurodesenvolvimento. Todos os direitos reservados.</p>
                 <p>Desenvolvido com <i class="fas fa-heart"></i> por Tales Edition</p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/5521977203468" class="whatsapp-float" target="_blank" rel="noopener" title="Fale no WhatsApp">
+    <a href="https://wa.me/5521977203468" class="whatsapp-float" target="_blank" rel="noopener" title="Fale no WhatsApp" aria-label="Fale no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
         <img src="" alt="" id="lightboxImg">
     </div>
 

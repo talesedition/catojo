@@ -1,7 +1,8 @@
 /* ============================================
    CATOJO CLÍNICA DE NEURODESENVOLVIMENTO - STYLE.CSS
-   Identidade Visual: Verde #085041 + Creme #f1efe8 + Laranja #d85a30
-   Fonte: Playfair Display (títulos) + Montserrat (corpo)
+   Identidade Visual: Verde-mar #085041 + Areia #F1EFE8 + Terracota #D85A30 + Grafite #2C2C2A
+   Fonte Display: Playfair Display (serif elegante)
+   Fonte Corpo: Montserrat (sans-serif)
    ============================================ */
 
 /* Reset & Base */
@@ -16,31 +17,31 @@
     --color-primary: #085041;
     --color-primary-light: #0a7a63;
     --color-primary-dark: #05382d;
-    --color-accent: #d85a30;
-    --color-accent-light: #e87a52;
-    --color-accent-dark: #b54520;
+    --color-accent: #D85A30;
+    --color-accent-light: #E87A52;
+    --color-accent-dark: #B54520;
 
     /* Fundos */
-    --color-bg: #f1efe8;
-    --color-bg-light: #eae7de;
+    --color-bg: #F1EFE8;
+    --color-bg-light: #EAE7DE;
     --color-bg-card: #ffffff;
-    --color-bg-input: #f8f7f4;
+    --color-bg-input: #F8F7F4;
 
     /* Textos */
-    --color-text: #1a1a1a;
-    --color-text-muted: #5a5a5a;
-    --color-text-dim: #8a8a8a;
+    --color-text: #2C2C2A;
+    --color-text-muted: #5a5a58;
+    --color-text-dim: #8a8a88;
 
     /* Bordas */
-    --color-border: #e0ddd5;
-    --color-border-light: #eceae4;
+    --color-border: #E0DDD5;
+    --color-border-light: #ECEAE4;
 
     --color-success: #22c55e;
     --color-danger: #ef4444;
 
     /* Fontes */
-    --font-display: 'Playfair Display', serif;
-    --font-primary: 'Montserrat', sans-serif;
+    --font-display: 'Playfair Display', 'Bodoni Moda', 'Didot', serif;
+    --font-primary: 'Montserrat', 'Helvetica Neue', sans-serif;
 
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
@@ -333,7 +334,7 @@ img {
     align-items: center;
     overflow: hidden;
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #f1efe8 0%, #eae7de 50%, #e5e8e3 100%);
+    background: linear-gradient(135deg, #F1EFE8 0%, #EAE7DE 50%, #E5E8E3 100%);
 }
 
 .hero-bg {
@@ -1834,4 +1835,29 @@ img {
     .contact-form-wrapper {
         padding: 24px;
     }
+}
+
+
+/* Hero Waves - positioned inside hero only */
+.hero-wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-wave-top {
+    top: 0;
+    height: 180px;
+}
+
+.hero-wave-bottom {
+    bottom: 0;
+    height: 180px;
+}
+
+/* Remove any decorative-waves that might be fixed */
+.decorative-waves {
+    display: none !important;
 }
