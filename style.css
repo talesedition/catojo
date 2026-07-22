@@ -362,6 +362,17 @@ img {
     align-items: center;
 }
 
+.hero-text {
+    order: 1;
+}
+
+.hero-image {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -432,12 +443,6 @@ img {
     color: var(--color-text-muted);
     margin-top: 4px;
     font-weight: 500;
-}
-
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-img-wrapper {
@@ -1676,11 +1681,47 @@ img {
     color: #ffffff;
 }
 
-/* Responsive */
+/* Hero Waves - positioned inside hero only */
+.hero-wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-wave-top {
+    top: 0;
+    height: 180px;
+}
+
+.hero-wave-bottom {
+    bottom: 0;
+    height: 180px;
+}
+
+/* Remove any decorative-waves that might be fixed */
+.decorative-waves {
+    display: none !important;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
 @media (max-width: 1024px) {
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    /* Mobile: texto ANTES da imagem */
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-image {
+        order: 2;
     }
 
     .hero-subtitle {
@@ -1694,10 +1735,6 @@ img {
 
     .hero-stats {
         justify-content: center;
-    }
-
-    .hero-image {
-        order: -1;
     }
 
     .hero-img-wrapper {
@@ -1835,29 +1872,13 @@ img {
     .contact-form-wrapper {
         padding: 24px;
     }
-}
 
+    /* Mobile hero: texto sempre antes da imagem */
+    .hero-text {
+        order: 1 !important;
+    }
 
-/* Hero Waves - positioned inside hero only */
-.hero-wave {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.hero-wave-top {
-    top: 0;
-    height: 180px;
-}
-
-.hero-wave-bottom {
-    bottom: 0;
-    height: 180px;
-}
-
-/* Remove any decorative-waves that might be fixed */
-.decorative-waves {
-    display: none !important;
+    .hero-image {
+        order: 2 !important;
+    }
 }
