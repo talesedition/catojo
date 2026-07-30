@@ -1,5 +1,5 @@
 /* ============================================
-   CATOJO CLÍNICA DE NEURODESENVOLVIMENTO - SCRIPT.JS
+   CLÍNICA CATOJO DE NEURODESENVOLVIMENTO - SCRIPT.JS
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const data = Object.fromEntries(formData);
 
         // Build WhatsApp message
-        const message = `*Novo contato - Site Catojo Clínica*%0A%0A` +
+        const message = `*Novo contato - Site Clínica Catojo*%0A%0A` +
             `*Nome:* ${data.nome}%0A` +
             `*WhatsApp:* ${data.whatsapp}%0A` +
             `*E-mail:* ${data.email}%0A` +

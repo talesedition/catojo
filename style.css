@@ -1,5 +1,5 @@
 /* ============================================
-   CATOJO CLÍNICA DE NEURODESENVOLVIMENTO - STYLE.CSS
+   CLÍNICA CATOJO DE NEURODESENVOLVIMENTO - STYLE.CSS
    Identidade Visual: Verde-mar #085041 + Areia #F1EFE8 + Terracota #D85A30 + Grafite #2C2C2A
    Fonte Display: Playfair Display (serif elegante)
    Fonte Corpo: Montserrat (sans-serif)
@@ -965,6 +965,15 @@ img {
     margin-bottom: 16px;
 }
 
+.about-tagline {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
 .about-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1024,6 +1033,10 @@ img {
     font-size: 0.8rem;
     color: var(--color-text-dim);
     font-weight: 500;
+}
+
+.about-crp + .about-crp {
+    margin-top: 4px;
 }
 
 /* Process */
