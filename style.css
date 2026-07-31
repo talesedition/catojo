@@ -222,7 +222,6 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     font-family: var(--font-primary);
     font-weight: 800;
     font-size: 1.3rem;
@@ -248,6 +247,20 @@ img {
 .logo-accent {
     color: var(--color-primary);
 }
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+    border-radius: var(--radius-sm);
+}
+
+.logo-img-footer {
+    height: 50px;
+    width: auto;
+    display: block;
+    border-radius: var(--radius-sm);
+}
+
 
 .nav-links {
     display: flex;
